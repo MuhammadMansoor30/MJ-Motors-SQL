@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mj_motors.MoreOptionsImportedController">
+    <children>
+        <Label layoutX="354.0" layoutY="32.0" text="More Options" textFill="#04688f">
+            <font>
+                <Font name="Bodoni MT Bold" size="26.0" />
+            </font>
+        </Label>
+        <Button layoutX="770.0" layoutY="31.0" mnemonicParsing="false" onAction="#back" text="Back" textFill="#980707">
+            <font>
+                <Font name="Californian FB Bold" size="18.0" />
+            </font>
+        </Button>
+      <Button fx:id="customerCheck" layoutX="56.0" layoutY="92.0" mnemonicParsing="false" onAction="#customerNotBuyCarCheck" prefHeight="30.0" prefWidth="170.0" text="Customers Check" textFill="#7f09a9">
+         <font>
+            <Font name="Eras Demi ITC" size="16.0" />
+         </font></Button>
+      <Button fx:id="customerMoreCars" layoutX="54.0" layoutY="168.0" mnemonicParsing="false" onAction="#customerBuyMoreThan1" text="Customer More Cars" textFill="#7f09a9">
+         <font>
+            <Font name="Eras Demi ITC" size="16.0" />
+         </font></Button>
+      <TableView fx:id="optionsTable" layoutX="50.0" layoutY="242.0" prefHeight="271.0" prefWidth="798.0">
+         <columns>
+            <TableColumn fx:id="carId" prefWidth="75.0" text="Car Id" />
+            <TableColumn fx:id="carName" prefWidth="109.99999237060547" text="Car Name" />
+            <TableColumn fx:id="carPrice" prefWidth="111.33335876464844" text="Car Price" />
+            <TableColumn fx:id="manId" prefWidth="98.4000244140625" text="Man Id" />
+            <TableColumn fx:id="manName" prefWidth="127.19998168945312" text="Man Name" />
+            <TableColumn fx:id="manPhNo" prefWidth="141.5999755859375" text="manPhNo" />
+            <TableColumn fx:id="custId" prefWidth="112.800048828125" text="Cust Id" />
+         </columns>
+      </TableView>
+      <Button fx:id="carsOnCommission" layoutX="340.0" layoutY="92.0" mnemonicParsing="false" onAction="#carCommission" text="Cars On Commision" textFill="#7f09a9">
+         <font>
+            <Font name="Eras Demi ITC" size="16.0" />
+         </font></Button>
+      <Button fx:id="carTypeCheck" layoutX="340.0" layoutY="168.0" mnemonicParsing="false" onAction="#customerSoldCar" prefHeight="30.0" prefWidth="143.0" text="Car Type Check" textFill="#7f09a9">
+         <font>
+            <Font name="Eras Demi ITC" size="16.0" />
+         </font></Button>
+      <Button fx:id="managerSold" layoutX="568.0" layoutY="130.0" mnemonicParsing="false" onAction="#managerSoldCar" text="Manager Who Has Sold More Cars" textFill="#7f09a9">
+         <font>
+            <Font name="Eras Demi ITC" size="16.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

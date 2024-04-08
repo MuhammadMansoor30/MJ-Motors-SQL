@@ -1,0 +1,11 @@
+.root{
+
+-fx-background-image:url('../Image/carbackground.jpg');
+-fx-background-size:cover;
+
+
+}
+.body{
+ -fx-background-image: url('carbackground.jpg');
+ -fx-background-size: 100% 100%;
+}

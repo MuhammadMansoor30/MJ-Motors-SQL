@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mj_motors.ImportedOwnerController">
+    <children>
+        <Label layoutX="324.0" layoutY="27.0" text="Hi! MUHAMMAD MANSOOR" textFill="#240fa6">
+            <font>
+                <Font name="Franklin Gothic Demi Cond" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="298.0" layoutY="79.0" text="Details of today sales are as given Below" textFill="#240fa6">
+            <font>
+                <Font name="Franklin Gothic Demi Cond" size="20.0" />
+            </font>
+        </Label>
+        <TableView fx:id="importedRecord" layoutX="18.0" layoutY="208.0" prefHeight="295.0" prefWidth="855.0">
+            <columns>
+                <TableColumn fx:id="manId" prefWidth="64.00000190734863" text="Man Id" />
+                <TableColumn fx:id="custId" prefWidth="74.66667938232422" text="Cust Id" />
+                <TableColumn fx:id="carName" prefWidth="79.33331298828125" text="Car Name" />
+                <TableColumn fx:id="carType" prefWidth="75.33332824707031" text="Car Type" />
+                <TableColumn fx:id="carCondition" prefWidth="100.00006103515625" text="Car Condition" />
+                <TableColumn fx:id="carModel" prefWidth="71.20001220703125" text="Car Model" />
+                <TableColumn fx:id="carPrice" prefWidth="75.0" text="Car Price" />
+            <TableColumn fx:id="carImportYear" prefWidth="75.0" text="Car YOI" />
+            <TableColumn fx:id="carAuction" prefWidth="88.7999267578125" text="CAR Auc Sht" />
+            <TableColumn fx:id="carGrade" prefWidth="75.0" text="Car Grade" />
+            <TableColumn fx:id="newCarId" prefWidth="75.0" text="New Car Id" />
+            <TableColumn fx:id="oldCarId" prefWidth="88.00006103515625" text="Old Car Id" />
+            </columns>
+        </TableView>
+        <Button layoutX="702.0" layoutY="143.0" mnemonicParsing="false" onAction="#checkAllStock_2" text="Check All Stock" textFill="#196b0a">
+            <font>
+                <Font name="Franklin Gothic Demi Cond" size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

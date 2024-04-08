@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mj_motors.CheckStockImportedController">
+    <children>
+        <Label layoutX="408.0" layoutY="24.0" text="Stock" textFill="#99960c">
+            <font>
+                <Font name="Bookman Old Style Bold" size="28.0" />
+            </font>
+        </Label>
+        <Label layoutX="43.0" layoutY="63.0" text="New Cars:" textFill="#990b6a">
+            <font>
+                <Font name="Bookman Old Style Bold" size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="newCarImported" layoutX="47.0" layoutY="100.0" prefHeight="183.0" prefWidth="795.0">
+            <columns>
+                <TableColumn fx:id="carIdNew" prefWidth="75.0" text="Car Id" />
+                <TableColumn fx:id="carNameNew" prefWidth="75.0" text="Car Name" />
+                <TableColumn fx:id="carPriceNew" prefWidth="75.0" text="Car Price" />
+                <TableColumn fx:id="carTypeNew" prefWidth="75.0" text="Car Type" />
+                <TableColumn fx:id="carConditionNew" prefWidth="99.20001220703125" text="Car Condition" />
+                <TableColumn fx:id="carModelNew" prefWidth="87.19998168945312" text="Car Model" />
+            <TableColumn fx:id="carYearImportNew" prefWidth="81.60003662109375" text="Car YOI" />
+            <TableColumn fx:id="carGradeNew" prefWidth="93.5999755859375" text="Car Grade" />
+            <TableColumn fx:id="carAuctionNew" prefWidth="112.0" text="Car Auct Sheet" />
+            </columns>
+        </TableView>
+        <Label layoutX="43.0" layoutY="298.0" text="OldCars:" textFill="#990b6a">
+            <font>
+                <Font name="Bookman Old Style Bold" size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="604.0" layoutY="42.0" mnemonicParsing="false" onAction="#back_1" text="Back" textFill="#990b6a">
+            <font>
+                <Font name="Bookman Old Style Bold Italic" size="18.0" />
+            </font>
+        </Button>
+      <TableView fx:id="oldCarImported" layoutX="47.0" layoutY="331.0" prefHeight="183.0" prefWidth="795.0">
+         <columns>
+            <TableColumn fx:id="carIdOld" prefWidth="75.0" text="Car Id" />
+            <TableColumn fx:id="carNameOld" prefWidth="75.0" text="Car Name" />
+            <TableColumn fx:id="carPriceOld" prefWidth="75.0" text="Car Price" />
+            <TableColumn fx:id="carTypeOld" prefWidth="75.0" text="Car Type" />
+            <TableColumn fx:id="carConditionOld" prefWidth="100.79998779296875" text="Car Condition" />
+            <TableColumn fx:id="carModelOld" prefWidth="80.00003051757812" text="Car Model" />
+            <TableColumn fx:id="carYearImportOld" prefWidth="92.0" text="Car YOI" />
+            <TableColumn fx:id="carGradeOld" prefWidth="84.79998779296875" text="Car Grade" />
+            <TableColumn fx:id="carAuctionOld" prefWidth="111.20001220703125" text="Car Auct Sheet" />
+         </columns>
+      </TableView>
+      <Button layoutX="747.0" layoutY="42.0" mnemonicParsing="false" onAction="#moreOptions" text="More..." textFill="#990b6a">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mj_motors.LocalOwnerController">
+   <children>
+      <Label layoutX="346.0" layoutY="28.0" text="Hi! SYED ALI JUNAID" textFill="#240fa6">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="287.0" layoutY="73.0" text="Details of today sales are as given Below" textFill="#240fa6">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="localRecord" layoutX="14.0" layoutY="201.0" prefHeight="318.0" prefWidth="850.0">
+        <columns>
+          <TableColumn fx:id="manId" prefWidth="57.33333969116211" text="Man Id" />
+            <TableColumn fx:id="custId" prefWidth="79.99999237060547" text="Cust Id" />
+            <TableColumn fx:id="carName" prefWidth="117.5999755859375" text="Car Name" />
+            <TableColumn fx:id="carCondition" prefWidth="104.0" text="Car Condition" />
+            <TableColumn fx:id="carModel" prefWidth="96.79998779296875" text="Car Model" />
+            <TableColumn fx:id="carPrice" minWidth="0.0" prefWidth="114.40005493164062" text="Car Price" />
+            <TableColumn fx:id="newCarId" prefWidth="135.99993896484375" text="New Car Id" />
+            <TableColumn fx:id="oldCarId" prefWidth="126.40008544921875" text="Old Car Id" />
+        </columns>
+      </TableView>
+      <Button layoutX="687.0" layoutY="127.0" mnemonicParsing="false" onAction="#checkAllStock_1" text="Check All Stock" textFill="#196b0a">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

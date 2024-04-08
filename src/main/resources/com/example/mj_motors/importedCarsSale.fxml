@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mj_motors.SaleImportedCarsController">
+    <children>
+        <Label layoutX="155.0" layoutY="29.0" text="Welcome To Imported Car Sale Section">
+            <font>
+                <Font name="Bauhaus 93" size="36.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.4735682651334922" centerY="0.5151515007019043" radius="0.7385321450889657">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.019607843831181526" green="0.48235294222831726" blue="0.3764705955982208" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.557894766330719" green="0.08884990215301514" blue="0.401546448469162" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <AnchorPane fx:id="pane1" layoutX="25.0" layoutY="83.0" prefHeight="430.0" prefWidth="836.0">
+            <children>
+                <Label layoutX="241.0" layoutY="26.0" text="Enter Details of the Car you want to Sell">
+                    <font>
+                        <Font name="Bauhaus 93" size="20.0" />
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.4735682651334922" centerY="0.5151515007019043" radius="0.7385321450889657">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.019607843831181526" green="0.48235294222831726" blue="0.3764705955982208" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.557894766330719" green="0.08884990215301514" blue="0.401546448469162" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <Label layoutX="95.0" layoutY="104.0" text="Car Name: " textFill="#168604">
+                    <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="93.0" layoutY="184.0" text="Car Type: " textFill="#168604">
+                    <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="452.0" layoutY="104.0" text="Car Condition: " textFill="#168604">
+                    <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="452.0" layoutY="184.0" text="Car Model:" textFill="#168604">
+                    <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="carName" layoutX="219.0" layoutY="101.0" />
+                <Spinner fx:id="spnCondition" editable="true" layoutX="615.0" layoutY="101.0" />
+                <Spinner fx:id="spnModel" layoutX="615.0" layoutY="181.0" />
+                <Button fx:id="sellCar" layoutX="662.0" layoutY="366.0" mnemonicParsing="false" onAction="#sellCar" text="Sell Car" textFill="#cf0707">
+                    <font>
+                        <Font name="Bauhaus 93" size="24.0" />
+                    </font>
+                </Button>
+                <Button fx:id="goBack" layoutX="93.0" layoutY="366.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" textFill="#cf0707">
+                    <font>
+                        <Font name="Bauhaus 93" size="24.0" />
+                    </font>
+                </Button>
+                <ChoiceBox fx:id="chBoxType" layoutX="219.0" layoutY="181.0" prefWidth="150.0" />
+            <Label layoutX="95.0" layoutY="262.0" text="Car Grade:" textFill="#168604">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="452.0" layoutY="262.0" text="Car Year Of Import:" textFill="#168604">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="323.0" text="Car Auction Sheet:" textFill="#168604">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="spnGrade" layoutX="219.0" layoutY="256.0" />
+            <Spinner fx:id="spnYearImport" layoutX="615.0" layoutY="257.0" />
+            <ChoiceBox fx:id="chBoxAuction" layoutX="393.0" layoutY="320.0" prefWidth="150.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="pane2" layoutX="129.0" layoutY="107.0" prefHeight="276.0" prefWidth="640.0" visible="false">
+            <children>
+                <Label layoutX="173.0" layoutY="63.0" text="We Can Buy this Car for " textFill="#bc0808">
+                    <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                    </font>
+                </Label>
+                <Button fx:id="sell" layoutX="488.0" layoutY="208.0" mnemonicParsing="false" onAction="#saleImportedCar" text="Sell">
+                    <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cancel" layoutX="62.0" layoutY="208.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+                    <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                    </font>
+                </Button>
+                <Label layoutX="83.0" layoutY="124.0" text="Your Price: ">
+                    <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="userPrice" layoutX="255.0" layoutY="125.0" prefHeight="26.0" prefWidth="204.0" />
+            <Label fx:id="carPrice" layoutX="384.0" layoutY="63.0" prefHeight="22.0" prefWidth="58.0" textFill="#bc0808">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mj_motors.LocalOwnerController">
+   <children>
+      <Button layoutX="106.0" layoutY="127.0" mnemonicParsing="false" text="Customers Check" />
+      <Button layoutX="407.0" layoutY="127.0" mnemonicParsing="false" text="No of Cars " />
+      <Button layoutX="106.0" layoutY="243.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="407.0" layoutY="243.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="259.0" layoutY="328.0" mnemonicParsing="false" text="Button" />
+      <Label layoutX="231.0" layoutY="33.0" text="More Options" textFill="#04688f">
+         <font>
+            <Font name="Bodoni MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="501.0" layoutY="336.0" mnemonicParsing="false" onAction="#back_1" text="Back" textFill="#980707">
+         <font>
+            <Font name="Californian FB Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

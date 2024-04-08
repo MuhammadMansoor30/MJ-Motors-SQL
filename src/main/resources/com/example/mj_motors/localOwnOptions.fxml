@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mj_motors.MoreOptionsLocalController">
+   <children>
+      <Button fx:id="customerCheck" layoutX="85.0" layoutY="88.0" mnemonicParsing="false" onAction="#customerNotBuyCarCheck" text="Customers Check" textFill="#7e079c">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font></Button>
+      <Button fx:id="carsOnCommission" layoutX="338.0" layoutY="88.0" mnemonicParsing="false" onAction="#carCommission" text="Cars On Commision" textFill="#7e079c">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font></Button>
+      <Button fx:id="customerMoreCars" layoutX="85.0" layoutY="152.0" mnemonicParsing="false" onAction="#customerBuyMoreThan1" text="Customer More Cars" textFill="#7e079c">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font></Button>
+      <Button fx:id="carTypeCheck" layoutX="349.0" layoutY="152.0" mnemonicParsing="false" onAction="#customerSoldCar" text="Car Type Check" textFill="#7e079c">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font></Button>
+      <Button fx:id="managerSold" layoutX="572.0" layoutY="117.0" mnemonicParsing="false" onAction="#managerSoldCar" text="Manager Who Has Sold More Cars" textFill="#7e079c">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font></Button>
+      <Label layoutX="364.0" layoutY="30.0" text="More Options" textFill="#04688f">
+         <font>
+            <Font name="Bodoni MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="753.0" layoutY="30.0" mnemonicParsing="false" onAction="#back_1" text="Back" textFill="#980707">
+         <font>
+            <Font name="Californian FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="optionsTable" layoutX="40.0" layoutY="232.0" prefHeight="289.0" prefWidth="802.0">
+         <columns>
+            <TableColumn fx:id="carId" prefWidth="88.80001068115234" text="Car Id" />
+            <TableColumn fx:id="carName" prefWidth="113.60003662109375" text="Car Name" />
+            <TableColumn fx:id="carPrice" prefWidth="115.199951171875" text="Car Price" />
+            <TableColumn fx:id="manId" prefWidth="96.79998779296875" text="Man Id" />
+            <TableColumn fx:id="manName" prefWidth="127.20004272460938" text="Man Name" />
+            <TableColumn fx:id="manPhNo" prefWidth="121.5999755859375" text="manPhNo" />
+            <TableColumn fx:id="custId" prefWidth="104.0" text="Cust Id" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
